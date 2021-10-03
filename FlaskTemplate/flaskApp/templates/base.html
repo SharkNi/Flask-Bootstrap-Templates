@@ -16,7 +16,7 @@
   <!-- Start Page Loading -->
   <div class="loading"><img src="{{ url_for('static', filename='img/loading.gif') }}" alt="loading-img"></div>
   <!-- End Page Loading -->
- <!-- //////////////////////////////////////////////////////////////////////////// --> 
+ <!-- //////////////////////////////////////////////////////////////////////////// -->
   <!-- START TOP -->
   <div id="top" class="clearfix">
 
@@ -94,7 +94,7 @@
   <!-- END TOP -->
  <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-<!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- //////////////////////////////////////////////////////////////////////////// -->
 <!-- START SIDEBAR -->
 <div class="sidebar clearfix">
 
@@ -103,7 +103,7 @@
   <li><a href="{{ url_for('index') }}"><span class="icon color8"><i class="fa fa-th"></i></span>Dashboard</a></li>
   <li><a href="{{ url_for('blank') }}"><span class="icon color6"><i class="fa fa-bar-chart"></i></span>Data Center</a></li>
   <li><a href="{{ url_for('blank') }}"><span class="icon color15"><i class="fa fa-columns"></i></span>News<span class="label label-default">19</span></a></li>
-  <li><a href="{{ url_for('blank') }}"><span class="icon color7"><i class="fa fa-map-marker"></i></span>Your Area</a></li>
+  <li><a href="{{ url_for('map') }}"><span class="icon color7"><i class="fa fa-map-marker"></i></span>Your Area</a></li>
 
 {#  <li><a href="#"><span class="icon color7"><i class="fa fa-flask"></i></span>UI Elements<span class="caret"></span></a>#}
 {#    <ul>#}
@@ -175,9 +175,9 @@
 
 </div>
 <!-- END SIDEBAR -->
-<!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- //////////////////////////////////////////////////////////////////////////// -->
 
- <!-- //////////////////////////////////////////////////////////////////////////// --> 
+ <!-- //////////////////////////////////////////////////////////////////////////// -->
 <!-- START CONTENT -->
 <div class="content">
 
@@ -207,14 +207,14 @@
 
 
 
- <!-- //////////////////////////////////////////////////////////////////////////// --> 
+ <!-- //////////////////////////////////////////////////////////////////////////// -->
 <!-- START CONTAINER -->
     {% block main_content %}
 
     {% endblock %}
 
 <!-- END CONTAINER -->
- <!-- //////////////////////////////////////////////////////////////////////////// --> 
+ <!-- //////////////////////////////////////////////////////////////////////////// -->
 
 <!-- Start Footer -->
 <div class="row footer">
@@ -230,10 +230,10 @@
 
 </div>
 <!-- End Content -->
- <!-- //////////////////////////////////////////////////////////////////////////// --> 
+ <!-- //////////////////////////////////////////////////////////////////////////// -->
 
 
-<!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- //////////////////////////////////////////////////////////////////////////// -->
 <!-- START SIDEPANEL -->
 <div role="tabpanel" class="sidepanel">
 
@@ -311,19 +311,19 @@
         <li class="checkbox checkbox-primary">
           <input id="checkboxside1" type="checkbox"><label for="checkboxside1">Add new products</label>
         </li>
-        
+
         <li class="checkbox checkbox-primary">
           <input id="checkboxside2" type="checkbox"><label for="checkboxside2"><b>May 12, 6:30 pm</b> Meeting with Team</label>
         </li>
-        
+
         <li class="checkbox checkbox-warning">
           <input id="checkboxside3" type="checkbox"><label for="checkboxside3">Design Facebook page</label>
         </li>
-        
+
         <li class="checkbox checkbox-info">
           <input id="checkboxside4" type="checkbox"><label for="checkboxside4">Send Invoice to customers</label>
         </li>
-        
+
         <li class="checkbox checkbox-danger">
           <input id="checkboxside5" type="checkbox"><label for="checkboxside5">Meeting with developer team</label>
         </li>
@@ -334,17 +334,17 @@
         <li class="checkbox checkbox-warning">
           <input id="checkboxside6" type="checkbox"><label for="checkboxside6">Redesign our company blog</label>
         </li>
-        
+
         <li class="checkbox checkbox-success">
           <input id="checkboxside7" type="checkbox"><label for="checkboxside7">Finish client work</label>
         </li>
-        
+
         <li class="checkbox checkbox-info">
           <input id="checkboxside8" type="checkbox"><label for="checkboxside8">Call Johnny from Developer Team</label>
         </li>
 
       </ul>
-    </div>    
+    </div>
     <!-- End Tasks -->
 
     <!-- Start Chat -->
@@ -380,7 +380,7 @@
 
 </div>
 <!-- END SIDEPANEL -->
-<!-- //////////////////////////////////////////////////////////////////////////// --> 
+<!-- //////////////////////////////////////////////////////////////////////////// -->
 
 
 <!-- ================================================
@@ -454,6 +454,16 @@ Moment.js
 ================================================ -->
 <script type="text/javascript" src="{{ url_for('static', filename='js/moment/moment.min.js') }}"></script>
 
+
+<!-- ================================================
+Gmaps
+================================================ -->
+<!-- google maps api -->
+{#<script src="{{ url_for('http://maps.google.com/maps/api/js?sensor=true') }}"></script>#}
+<!-- main file -->
+<script src="{{ url_for('static', filename='js/gmaps/gmaps.js') }}"></script>
+<!-- demo codes -->
+<script src="{{ url_for('static', filename='js/gmaps/gmaps-plugin.js') }}"></script>
 
 <!-- ================================================
 Below codes are only for index widgets

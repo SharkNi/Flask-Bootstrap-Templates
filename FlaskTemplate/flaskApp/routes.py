@@ -12,7 +12,14 @@ def index():
     return render_template('index.html')
 
 
+# maps page
+@app.route('/map', methods=['GET', 'POST'])
+def map():
+    return render_template('map.html')
+
 # testing page
 @app.route('/blank', methods=['GET', 'POST'])
 def blank():
     return render_template('blank.html')
+
+
